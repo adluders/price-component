@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css?family=Karla:400,700&display=swap");
+
+/* Custom Props */
+:root {
+  --cyan_color: hsl(179, 62%, 43%);
+  --bright_yellow: hsl(71, 73%, 54%);
+  --light_gray: hsl(204, 43%, 93%);
+  --grayish_blue: hsl(218, 22%, 67%);
+}
+
+/* Resets */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+/* General Styles */
+body {
+  width: 90%;
+  margin: auto;
+}
+
+li {
+  list-style: none;
+  padding: 0.2rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.btn {
+  background-color: var(--bright_yellow);
+  padding: 1rem 0.5rem;
+  width: 80%;
+  display: inline-block;
+  text-align: center;
+  color: #fff;
+  border-radius: 0.3rem;
+}
+
+.lead-msg {
+  font-weight: 700;
+  font-size: 2rem;
+}
+/* Header */
+header {
+  padding: 2rem 0;
+}
+
+header .welcome-msg {
+  color: var(--cyan_color);
+  font-size: 3rem;
+}
+
+header .lead-msg {
+  color: var(--bright_yellow);
+  padding: 1rem 0;
+}
+
+header .lead-msg + p {
+  color: var(--grayish_blue);
+}
+
+/* Main */
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 3rem;
+  color: var(--light_gray);
+}
+
+main #section-1 {
+  background-color: var(--cyan_color);
+  padding: 2rem;
+}
+
+main #section-1 div {
+  display: grid;
+  gap: 2rem;
+}
+
+main #section-1 div > p:first-of-type {
+  color: hsla(204, 43%, 93%, 0.4);
+}
+
+main #section-1 div > p span {
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(204, 43%, 93%);
+}
+
+main #section-2 {
+  background-color: hsla(179, 62%, 43%, 0.9);
+  padding: 2.5rem;
+}
+
+#section-2 ul {
+  margin-top: 1rem;
+}
+/* Footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  .btn {
+    margin: auto;
+    width: 100%;
+  }
+  p {
+    font-size: 1rem;
+  }
+  header .welcome-msg {
+    font-size: 2rem;
+  }
+
+  .lead-msg {
+    font-size: 1.5rem;
+  }
+
+  header .lead-msg + p {
+    line-height: 1.8rem;
+  }
+  .welcome-msg {
+    font-size: 2.5rem;
+  }
+  main #section-1 div > p span {
+    font-size: 1.5rem;
+  }
+}
