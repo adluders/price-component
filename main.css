@@ -26,7 +26,7 @@ body{
 
 .container {
 	margin:4rem 3rem 0 3rem;
-	padding: 1em;
+	/*not necessary----padding: 1em;*/
 }
 
 /*end of styles for body and container*/
