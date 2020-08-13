@@ -198,7 +198,12 @@ main section:nth-of-type(2) ul {
 	}
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 414px){
+
+	.container{
+		margin:2rem;
+	}
+
 	header {
 		padding: 2rem;
 	}
