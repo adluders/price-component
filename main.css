@@ -18,6 +18,19 @@
 
 /* General Styles */
 
+/* styles added by adeleke5140 */
+
+body{
+	background-color: hsl(180, 23.5%, 93.3%)
+}
+
+.container {
+	margin:4rem 3rem 0 3rem;
+	/*not necessary----padding: 1em;*/
+}
+
+/*end of styles for body and container*/
+
 li {
   list-style: none;
   padding: 0.2rem 0;
@@ -47,7 +60,10 @@ p {
 }
 /* Header */
 header {
-  padding: 2rem 0;
+  padding: 4rem;
+  /*additional styles for header, adeleke5140*/
+  border-radius: 1em 1em 0 0;
+  background: #fff;
 }
 
 header .welcome-msg {
@@ -75,6 +91,8 @@ main {
 main section:first-of-type {
   background-color: var(--cyan_color);
   padding: 2rem;
+  /*styles by adeleke5140*/
+  border-radius: 0 0 0 1em;
 }
 
 main section:first-of-type div {
@@ -95,6 +113,7 @@ main section:first-of-type div > p span {
 main section:nth-of-type(2) {
   background-color: hsla(179, 62%, 43%, 0.9);
   padding: 2.5rem;
+  border-radius: 0 0 1em 0;
 }
 
 main section:nth-of-type(2) ul {
@@ -105,10 +124,13 @@ main section:nth-of-type(2) ul {
 .attribution {
   font-size: 11px;
   text-align: center;
+  font-weight: bold;/*makes footer text more legible*/
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/*media queries*/
 
 @media only screen and (max-width: 600px) {
   main {
@@ -139,4 +161,50 @@ main section:nth-of-type(2) ul {
   main section:first-of-type div > p span {
     font-size: 1.5rem;
   }
+}
+
+/*media queries added by adeleke5140*/
+
+/* adds border-radius for smaller devices*/
+@media only screen and (max-width: 568px){
+	main section:first-of-type {
+		border-radius: 0;
+	}	
+
+	main section:nth-of-type(2){
+		border-radius: 0 0 1em 1em;
+	}
+
+}
+/*end of border-radius section*/
+
+/* every change here is to ensure legibility from tablets to mobile devices*/
+@media only screen and (max-width:746px){
+	.container {
+		margin:2rem;
+		padding:0;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	.container {
+		margin: 3rem;
+	}
+}
+
+@media only screen and (max-width:490px){
+	header {
+		padding: 3rem;
+	}
+}
+
+@media only screen and (max-width: 414px){
+
+	.container{
+		margin:2rem;
+	}
+
+	header {
+		padding: 2rem;
+	}
 }
