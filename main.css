@@ -18,6 +18,19 @@
 
 /* General Styles */
 
+/* styles added by adeleke5140 */
+
+body{
+	background-color: hsl(173.3, 15.3%, 88.4%);
+}
+
+.container {
+	margin:5em;
+	padding: 1em;
+}
+
+/*end of styles for body and container*/
+
 li {
   list-style: none;
   padding: 0.2rem 0;
@@ -47,7 +60,10 @@ p {
 }
 /* Header */
 header {
-  padding: 2rem 0;
+  padding: 4rem;
+  /*additional styles for header, adeleke5140*/
+  border-radius: 1em 1em 0 0;
+  background: #fff;
 }
 
 header .welcome-msg {
@@ -75,6 +91,8 @@ main {
 main section:first-of-type {
   background-color: var(--cyan_color);
   padding: 2rem;
+  /*styles by adeleke5140*/
+  border-radius: 0 0 0 1em;
 }
 
 main section:first-of-type div {
@@ -95,6 +113,7 @@ main section:first-of-type div > p span {
 main section:nth-of-type(2) {
   background-color: hsla(179, 62%, 43%, 0.9);
   padding: 2.5rem;
+  border-radius: 0 0 1em 0;
 }
 
 main section:nth-of-type(2) ul {
@@ -105,6 +124,7 @@ main section:nth-of-type(2) ul {
 .attribution {
   font-size: 11px;
   text-align: center;
+  font-weight: bold;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
